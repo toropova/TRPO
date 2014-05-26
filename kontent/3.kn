@@ -1,0 +1,118 @@
+<br>
+<p align="left" style="color:white"><big>AURORA Hotel St. Petersburg offers 
+137 rooms for accommodation including:</big><br>
+<ul style="color:white">
+  <li>Studio apartments (Single)</li>
+  <li>Standart apartments (Single and Double)</li>
+  <li>Suit apartments (Double)</li>
+  <li>Premium apartments (Double)</li>
+</ul> 
+<br><br>
+
+<table bgcolor='grey' border="0" width="100% height=50%" cellpadding="10px"> 
+<tr>
+
+<td width="60%">
+<div align="center" style="height:300px;">
+ <img src="images/studio/1.png" alt="studio" id="slide_show"><br>
+</div>
+</td>
+
+<td width="40%">
+<h3 style="color:c0c0c0">STUDIO APARTMENT</h3>
+<p style="color:white">Our budget economy Studio rooms are popular among guests:</p>
+<ul style="color:white">
+  <li>Single configurations available</li>
+  <li>Separate bathroom</li>
+  <li>Free Wi-Fi</li>
+  <li>Satellite TV</li>
+  <li>Phone</li>
+</ul> 
+<p>Price pro night 180$</p>
+<a href='/try/dvig/book.php'><p style="color:yellow">BOOK NOW</p>
+</td>
+</tr>
+</table> 
+
+<table bgcolor='606060' border="0" width="100% height=50%" cellpadding="10px">
+<tr>
+<td width="40%">
+<h3 style="color:c0c0c0">STANDART APARTMENT</h3>
+<p style="color:white">Our superior rooms underwent a soft refurbishment several years ago that makes them even more comfortable and attractive for guests.</p>
+<ul style="color:white">
+  <li>Single/ Twin or Double configurations available</li>
+  <li>Separate bathroom with hair dryer and heated towel rail</li>
+  <li>Free Wi-Fi</li>
+  <li>Satellite TV</li>
+  <li>Phone</li>
+</ul> 
+<p>Price pro night 220$</p>
+<a href='/try/dvig/book.php'><p style="color:yellow">BOOK NOW</p>
+</td>
+
+<td width="60%">
+<div align="center" style="height:300px;">
+ <img src="images/standart/1.png" alt="standart" id="slide_show2"><br>
+</div>
+</td>
+</tr>
+</table> 
+
+<table bgcolor='grey' border="0" width="100% height=50%" cellpadding="10px">
+<tr>
+<td width="60%">
+<div align="center" style="height:300px;">
+ <img src="images/suit/1.png" alt="suit" id="slide_show3"><br>
+</div>
+</td>
+
+<td width="40%">
+<h3 style="color:c0c0c0">SUIT APARTMENT</h3>
+<p style="color:white">Suits twin offer plenty of space and relaxing cozy atmosphere that tourists appreciate so much.</p>
+<ul style="color:white">
+  <li>Large living space</li>
+  <li>Twin or Double configurations available</li>
+  <li>Separate bathroom with hair dryer and heated towel rail and amenities</li>
+  <li>Free Wi-Fi</li>
+  <li>Satellite TV</li>
+  <li>Refrigerator</li>
+  <li>Phone</li>
+</ul>
+<p>Price pro night 250$</p>
+<a href='/try/dvig/book.php'><p style="color:yellow">BOOK NOW</p> 
+</td>
+</tr>
+</table> 
+
+<table bgcolor='606060' border="0" width="100% height=100%" cellpadding="10px">
+<tr>
+<td width="40%">
+<h3 style="color:c0c0c0">PREMIUM APARTMENT</h3>
+<p style="color:white">Move into our bright spacious air-conditioned superior suites with amazing views of Saint-Petersburg.</p>
+<ul style="color:white">
+<li>Large separate living room</li>
+  <li>Twin or Double configurations available</li>
+  <li>Comfortable furniture</li>
+  <li>Refrigerator</li>
+  <li>Separate bathroom with hair dryer and heated towel rail and amenities</li>
+  <li>Free Wi-Fi</li>
+  <li>Satellite TV</li>
+  <li>Phone</li>
+</ul> 
+<p>Price pro night 280$</p>
+<a href='/try/dvig/book.php'><p style="color:yellow">BOOK NOW</p>
+</td>
+
+<td width="60%" >
+<div align="center" style="height:300px;">
+ <img src="images/premium/1.png" alt="premium" id="slide_show4"><br>
+</div>
+</td>
+</tr>
+</table> 
+
+
+
+
+
+
