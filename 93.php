@@ -26,7 +26,7 @@ $to = "anuto-4-ka@yandex.ru";
 $subject = "$topic";
 $message = "Name:$name::::::::::Email:$email::::::::::::Message:$message";
 mail($to,$subject,$message) or print "Cannot sent your message !!!";
-echo "<br><center><b>Thank you for your message. Press<a href=4.php> here </a>, to go back...></b>";
+echo "<br><center><b>Thank you for your message. Press<a href=book.php> here </a>, to go back...></b>";
 exit;
 ?>
 </body> 

@@ -17,7 +17,7 @@
 	var dayDiff = null;
 	var minCOutDate = null;
 	
-	$( "#checkoutdate" ).datepicker({ minDate: +1, dateFormat: "dd-mm-yy", onSelect:
+	$( "#checkoutdate" ).datepicker({ minDate: +1, dateFormat: "yy-mm-dd", onSelect:
 		function(date){
 			// change the date from string to a date object
 			date = new Date(date.replace(pattern,'$3-$2-$1'));
@@ -27,7 +27,7 @@
 			cOutDate = date;
 		}
 	});
-    $( "#checkindate" ).datepicker({ minDate: 0, dateFormat: "dd-mm-yy", onSelect:
+    $( "#checkindate" ).datepicker({ minDate: 0, dateFormat: "yy-mm-dd", onSelect:
 		function(date){
 			// change the date from string to a date object
 			date = new Date(date.replace(pattern,'$3-$2-$1'));

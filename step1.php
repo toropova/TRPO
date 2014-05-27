@@ -58,17 +58,6 @@ else
 	echo "Error ! Script is empty !";
 	exit;
 }
- 
-$host = 'localhost';
-$user = 'root'; 
-$pass = ''; 
-$dbname = 'mydb';
-mysql_set_charset("utf-8"); 
-
-$con=mysqli_connect($host,$user,$pass,$dbname);
-if (mysqli_connect_errno()) {
-  echo "Failed to connect to MySQL: " . mysqli_connect_error();
-}
 
 $query = "INSERT INTO date VALUES (NULL, '".$in."', '".$out."', '".$guests."', '".$room."')";
 $res = mysqli_query($con,$query);
@@ -79,7 +68,7 @@ $result = mysqli_query($con, $q);
 if(!$result) echo " error";
 $row = mysqli_fetch_array($result);
 
-$q1 = "INSERT INTO customers (id, id_date) VALUES (NULL, '$row[id_date]')";
+$q1 = "INSERT INTO customers (id, id_date) VALUES (NULL, '$row[iddate]')";
 $interval = date_diff(date_create($row['in']), date_create($row['out']));
 $result1 = mysqli_query($con, $q1);
 if(!$result1) echo " Error";
@@ -94,38 +83,13 @@ echo "<table bgcolor='707070' border='0' width='100%' align='center' cellpadding
 <div style='font-size:14px'><br>Check-in date:</div> $in from 14-00<br>
 <div style='font-size:14px'><br>Check-out date:</div> $out until 12-00<br>
 <div style='font-size:14px'><br>Number of guests:</div> $guests<br>
-<div style='font-size:14px'><br>Type of the room:</div> $row2[name]<br></p></td></tr></table>"; 
-
-// echo "<table border='1'>
-// <tr>
-// <th>Check-in date</th>
-// <th>Check-out date</th>
-// <th>Number of guests</th>
-// <th>Room</th>
-// <th>int</th>
-// </tr>";
-// $row = mysqli_fetch_array($result);
-// $interval->format('%a');
-
-// while($row = mysqli_fetch_array($result)) {
-//   echo "<tr>";
-//   echo "<td>" . $row['in'] . "</td>";
-//   echo "<td>" . $row['out'] . "</td>";
-//   echo "<td>" . $row['num_guest'] . "</td>";
-//   echo "<td>" . $row['room'] . "</td>";
-//   $interval = date_diff(date_create($row['in']), date_create($row['out']));
-//   echo "<td>" . $interval->format('%a') . "</td>";
-//   echo "</tr>";
-// }
-
-//echo "</table>";
-echo
-"</td></tr>
+<div style='font-size:14px'><br>Type of the room:</div> $row2[nameroom]<br></p></td></tr></table>
+</td></tr>
 <table border='0' width='80%' align='center' bgcolor='c0c0c0'>
 <tr><td width='10%' bgcolor='909090'></td><td width='40%'>
 <h4>Your details</h4>
 <form action='step2.php' method='post'>
-<input type='hidden' name='id' value='$row[id_date]'>
+<input type='hidden' name='id' value='$row[iddate]'>
 <div style='font-size:14px'>Name: </div>
 <input name='name' type='text' style='width:60%; height:100%' maxlength='20'>
 <div style='font-size:14px'><br>Lastname: </div>

@@ -60,22 +60,11 @@ else
 	exit;
 }
 
-$host = 'localhost';
-$user = 'root'; 
-$pass = ''; 
-$dbname = 'mydb';
-mysql_set_charset("utf-8"); 
-
-$con=mysqli_connect($host,$user,$pass,$dbname);
-if (mysqli_connect_errno()) {
-  echo "Failed to connect to MySQL: " . mysqli_connect_error();
-}
-
 $query = "UPDATE customers SET  name='".$name."', lastname='".$lastname."', passport='".$passport."', address='".$address."', email='".$email."' WHERE id_date='".$id_date."'";
 $res = mysqli_query($con,$query);
 if(!$res) echo " error";
  
-$query = "SELECT * FROM date WHERE id_date='".$id_date."'";
+$query = "SELECT * FROM date WHERE iddate='".$id_date."'";
 $res1 = mysqli_query($con,$query);
 if(!$res1) echo " error";
 $row = mysqli_fetch_array($res1);
@@ -96,14 +85,14 @@ echo "<h4>Please check your data</h4>
 <div style='font-size:14px'><br>Check-in date:</div> $row[in] from 14-00<br>
 <div style='font-size:14px'><br>Check-out date:</div> $row[out] until 12-00<br>
 <div style='font-size:14px'><br>Number of guests:</div> $row[num_guest]<br>
-<div style='font-size:14px'><br>Type of the room:</div> $row1[name]<br>
+<div style='font-size:14px'><br>Type of the room:</div> $row1[nameroom]<br>
 <div style='font-size:14px'><br>Your name:</div> $name $lastname<br>
 <div style='font-size:14px'><br>Address:</div> $address<br>
 <div style='font-size:14px'><br>Passport:</div> $passport<br>
 <div style='font-size:14px'><br>Email:</div> $email<br>
-</p><form action='confurm.php' method='post'>
+</p><form action='confirm.php' method='post'>
 <input type='hidden' name='id' value='$row2[id]'>
-<input name='submit' type='submit' value='Confurm'></form></td></tr></table> 
+<input name='submit' type='submit' value='Confirm'></form></td></tr></table> 
 ";
 ?>
 </body> 
